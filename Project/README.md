@@ -1,6 +1,6 @@
 ## Big Data Recommendation System on [Million Song Dataset](http://millionsongdataset.com).
 
-![Project Overview](banner.png)
+![poster](poster.png)
 
 For more, see [slides](Find_Next_Hit.pdf)
 
