@@ -16,7 +16,7 @@ def run_bfs_mapreduce_cluster():
     hdfs_output_dir = './output'
     
     os.system(f'hdfs dfs -rm {hdfs_graph_path}')
-    os.system(f'hdfs dfs -rm -r {hdfs_output_dir}')
+    os.system(f'hdfs dfs -rm -r {hdfs_output_dir}/*')
     os.system(f'hdfs dfs -put ./files/graph.txt /')
     os.system(f'python3 bfs_mr.py -r hadoop hdfs://{hdfs_graph_path} -o hdfs://{hdfs_output_dir}')
     os.system(f'hdfs dfs -get {hdfs_output_dir}/part-00000 ./output/output.txt')
