@@ -2,14 +2,20 @@
 
 ## Requirements
 
-1. **Mount the Million Song Dataset's ISO:**
+1. **Create necessary folders:**
+   - Create `files` and `output` folders for storing input and temporary output files
+     ```bash
+     mkdir files output
+     ```
+
+2. **Mount the Million Song Dataset's ISO:**
    - Mount the Million Song Dataset's ISO into the `mnt` folder in the current directory.
    - Example command to mount:
      ```bash
      sudo mount -o loop path_to_msd.iso ./mnt
      ```
 
-2. **Dataset Preparation:**
+3. **Dataset Preparation:**
    - Ensure the avro dataset generated in previous steps is named `songs_advanced.avro` and placed in the `files` folder.
    - Example directory structure:
      ```
