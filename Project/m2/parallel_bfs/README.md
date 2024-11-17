@@ -6,7 +6,7 @@
    - Mount the Million Song Dataset's ISO into the `mnt` folder in the current directory.
    - Example command to mount:
      ```bash
-     sudo mount -o loop path_to_msd.iso ./mnt
+     sudo mount -o loop /path/to/msd.iso ./mnt
      ```
 
 2. **Dataset Preparation:**
