@@ -7,11 +7,11 @@ sudo -S sshfs /home/hadoopuser/ece472 -o allow_other -o Port=2223 ece472@focs.ji
 sudo -S mount /home/hadoopuser/ece472/millionsong.iso /home/hadoopuser/ece472/
 ```
 
-See `avroSpark.py` to retrieve data from SFOCS.
+See `avroSpark.py` to retrieve data from FOCS.
 
 See `testAvro.ipynb` for basic analysis.
 
-For parallization on `spark-submit` in local mode:
+For parallelization on `spark-submit` in local mode:
 
 ```shell
 spark-submit --master local[12] --conf spark.pyspark.driver.python=python3 \
