@@ -32,7 +32,7 @@
    - Ensure `graph.txt` is generated and available in the `files` directory.
    - Use the following command to run MapReduce:
      ```bash
-     python3 bfs_mr ./files/graph.txt > ./output/output.txt
+     python3 bfs_mr.py ./files/graph.txt > ./output/output.txt
      ```
 
 4. **Run Spark:**
